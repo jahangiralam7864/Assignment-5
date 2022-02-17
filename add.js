@@ -1,8 +1,10 @@
+let newBalanceTotal = 0;
+
 document.getElementById('deposit-submit').addEventListener('click', function () {
+
     const depositInput = document.getElementById('salary-input');
     const depositText = depositInput.value;
     const salaryTotal = parseFloat(depositText);
-    // console.log(salaryTotal);
 
     // cost information add
     const foodAmount = document.getElementById('food');
@@ -31,7 +33,23 @@ document.getElementById('deposit-submit').addEventListener('click', function () 
     const balanceTotal = document.getElementById('total-balance');
     const deposit = balanceTotal.value;
     const salaryTotal1 = parseFloat(deposit);
-    const newBalanceTotal = salaryTotal1 - totalCost;
+    newBalanceTotal = salaryTotal1 - totalCost;
     balanceTotal.innerHTML = cash;
+    depositInput.value = '';
+});
 
+// deposit area add info
+document.getElementById('saving').addEventListener('click', function () {
+    const savingInput = document.getElementById('saving-input');
+    const savingText = savingInput.value;
+    const savingTotal = parseFloat(savingText);
+    // console.log(savingTotal);
+
+    const savingTitle = document.getElementById('total-balance');
+    const savingAmountTitle = savingTitle.innerHTML;
+    const savingAmountText = parseFloat(savingAmountTitle);
+    const savingAmountTotal = (savingAmountText * savingTotal) / 100;
+    console.log(newBalanceTotal);
+    console.log(savingAmountText);
+    document.getElementById('saving-amount').innerText = savingAmountTotal;
 });
