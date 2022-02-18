@@ -49,7 +49,7 @@ document.getElementById('saving').addEventListener('click', function () {
     const savingAmountTitle = savingTitle.innerHTML;
     const savingAmountText = parseFloat(savingAmountTitle);
     const savingAmountTotal = (savingAmountText * savingTotal) / 100;
-    console.log(newBalanceTotal);
-    console.log(savingAmountText);
     document.getElementById('saving-amount').innerText = savingAmountTotal;
+    document.getElementById('remaining').innerText = savingAmountText - savingAmountTotal;
+
 });
