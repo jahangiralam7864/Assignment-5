@@ -1,10 +1,15 @@
-// let newBalanceTotal = 0;
 
 document.getElementById('deposit-submit').addEventListener('click', function () {
 
     const depositInput = document.getElementById('salary-input');
+
     const depositText = depositInput.value;
     const salaryTotal = parseFloat(depositText);
+
+    if (salaryTotal < 1 ) {
+        alert( 'salary can not be lease then one' );
+        return;
+    }
 
     // cost information add
     const foodAmount = document.getElementById('food');
