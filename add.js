@@ -1,4 +1,4 @@
-let newBalanceTotal = 0;
+// let newBalanceTotal = 0;
 
 document.getElementById('deposit-submit').addEventListener('click', function () {
 
@@ -28,7 +28,6 @@ document.getElementById('deposit-submit').addEventListener('click', function () 
     const expensesTotal = totalCost + expensesParse;
     expenses.innerHTML = totalCost;
 
-
     // total balance check information
     const balanceTotal = document.getElementById('total-balance');
     const deposit = balanceTotal.value;
@@ -49,7 +48,9 @@ document.getElementById('saving').addEventListener('click', function () {
     const savingAmountTitle = savingTitle.innerHTML;
     const savingAmountText = parseFloat(savingAmountTitle);
     const savingAmountTotal = (savingAmountText * savingTotal) / 100;
+    // saving-amount maintaining 
     document.getElementById('saving-amount').innerText = savingAmountTotal;
+    // remaining balance add information 
     document.getElementById('remaining').innerText = savingAmountText - savingAmountTotal;
 
 });
