@@ -31,19 +31,23 @@
     background-color: #59A5FF;
 }
 .input-gap1{
-    margin-left: 35px;
+    margin-left: 22px;
+    width: 150px;
 }
 .input-gap2{
     margin-left: 33px;
+    width: 150px;
 }
 .input-gap3{
     margin-left: 37px;
+    width: 150px;
 }
 .input-gap4{
     margin-left: 10px;
+    width: 150px;
 }
 .parsent{
-    width: 100px;
+    width: 68px;
     margin-left: 7px;
     height: 30px;
 }
@@ -51,7 +55,8 @@
     width: 10px;
 }
 .parsent-button{
-    width: 100px;
+    width: 60px;
+    border-radius: 7px;
     background-color: #59A5FF;
 }
 .margin{
