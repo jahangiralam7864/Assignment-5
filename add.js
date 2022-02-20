@@ -47,6 +47,11 @@ document.getElementById('saving').addEventListener('click', function () {
     const savingInput = document.getElementById('saving-input');
     const savingText = savingInput.value;
     const savingTotal = parseFloat(savingText);
+    // error handel add
+    if ( savingTotal <= 0 ) {
+        alert('saving con not be lease then one ');
+        return;
+    }
     // console.log(savingTotal);
 
     const savingTitle = document.getElementById('total-balance');
